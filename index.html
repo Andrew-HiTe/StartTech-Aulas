@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/modal.js" type="text/javascript"></script>
+    <title>Start Tech</title>
+</head>
+
+<body>
+    <main>
+        <header id="cabecalho_pagina">
+            <nav id="menu">
+                <a href="#">Produtos</a>
+                <a href="#">Recursos</a>
+                <a href="#">Inspiração</a>
+                <a href="#">Produtos</a>
+            </nav>
+            <nav id="logo">
+                <a href="">
+                    <img src="./images/figura1.png" alt="Logo">
+                </a>
+            </nav>
+            <nav id="elementos">
+                <img src="./images//figura4.png" alt="">
+                <button id="conectar">Conectar</button>
+                <button id="cadastro" onclick="abrirModal()">Cadastre-se gratuitamente</button>
+            </nav>
+        </header>
+        <section id="container">
+            <section id="esquerda">
+                <h1 id="titulo">
+                    As lojas do<br>
+                    Mailchimp já estão<br>
+                    disponíveis
+                </h1>
+                <p id="subtitulo">
+                    Impulsione as vendas, envolva os clientes e anuncie seu negócio em um só lugar. Crie sua loja
+                    virtual gratuitamente.
+                </p>
+                <button id="saiba_mais">Saiba mais</button>
+            </section>
+
+            <section id="direita">
+                <div id="container-big">
+                    <img style="float: right;" ;" src="/images/carrinho.png" alt="">
+                    <img src="/images/tres_pontinhos.png" alt="">
+                    <h2 id="big-titulo">Big Mood Spa</h2>
+                    <img id="img-big" src="./images/figura2.png" alt="">
+                    <div id="small">
+                        <h2>Shopping Cart</h2>
+                        <img src="/images/figua3.png">
+                        <button>Continue to Checkout</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer id="rodape">
+            <p>
+                Copyrighgt &copy; 2025
+            </p>
+        </footer>
+
+        <div class="janela_escura">
+            <div class="modal">
+                <div class="fechar" onclick="fecharModal()">X</div>
+                <form>
+                    <legend>
+                        <h2> Cadastre-se </h2>
+                    </legend>
+                    <br />
+                    <label>Digite seu nome:
+                        <input type="text" size="30" maxlength="30" />
+                    </label><br />
+                    <label>Digite seu e-mail:
+                        <input type="mail" size="30" maxlength="30" />
+                    </label><br />
+                    <label>Seu gênero:
+                        <select name="genero">
+                            <option>masculino</option>
+                            <option>feminino</option>
+                            <option>outro</option>
+                        </select>
+                    </label><br />
+
+                    <label>Digite sua senha:
+                        <input type="password" size="8" />
+                    </label>
+                    <br>
+                    <input type="submit" value="enviar" class="enviar" />
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
